@@ -1,0 +1,77 @@
+/* GENERIC TYPE SELECTORS */
+body {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 1rem;
+	line-height: 2rem;
+	background: #DFE3E6;
+}
+a:link, a:visited {
+	color: #CC1C0D;	
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;	
+}
+h1 {
+	font-size: 1em;
+	color: #CC1C0D;
+	padding: 3px 0 3px 20px;
+	border-radius: 10px 0;
+	border: 1px solid #929CA4;
+	background: url(../images/icon_checker.gif) no-repeat 7px center #DFE3E6;
+}
+/* GRID */
+main {
+  display: grid;
+  width: 960px;
+  margin: 20px auto;
+  background: white;
+  grid-template-columns: 220px 1fr 1fr;
+  grid-template-rows: 105px auto auto 50px;
+  grid-gap: 20px;
+  align-content: center;
+  grid-template-areas:
+      "logo navi navi"
+      "head head head"
+      "cont cont side"
+      "foot foot foot";
+}
+main > img {
+	grid-area: logo;
+}
+nav	{
+	grid-area: navi;
+}
+nav ul	{
+	margin-top:3.3rem;
+	text-align:right;
+}
+nav ul li {
+	display:inline;
+}
+nav ul li a,
+nav ul li a:visited {
+	padding: 3px 10px;
+	font-size: 1.2rem;
+}
+header {
+ 	grid-area: head;
+}
+section {
+	grid-area: cont;
+	margin-left:10px;
+}
+section img {
+	float: left;
+	padding: 7px 10px 0 0;
+}
+aside {
+	grid-area: side;
+	margin-right:10px;
+}
+footer {
+	grid-area: foot;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px solid #DFE3E6;
+}

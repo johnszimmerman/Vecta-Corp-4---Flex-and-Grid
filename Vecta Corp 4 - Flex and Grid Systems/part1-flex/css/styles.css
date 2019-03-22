@@ -1,0 +1,67 @@
+/* GENERIC TYPE SELECTORS */
+body {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 1rem;
+	line-height: 2rem;
+	background: #DFE3E6;
+}
+a:link, a:visited {
+	color: #CC1C0D;	
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;	
+}
+h1 {
+	font-size: 1em;
+	color: #CC1C0D;
+	padding: 3px 0 3px 20px;
+	border-radius: 10px 0;
+	border: 1px solid #929CA4;
+	background: url(../images/icon_checker.gif) no-repeat 7px center #DFE3E6;
+}
+/* FLEXIBLE BOX */
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	width: 960px;
+	margin: 20px auto;
+	background: white;
+}
+.container > img {
+	flex: 1 auto;
+}
+nav {
+	flex: 2 75%;
+	display: flex;
+	justify-content: flex-end;
+}
+nav ul	{
+	align-self: center;
+}
+nav ul li {
+	display:inline;
+}
+nav ul li a,
+nav ul li a:visited {
+	padding: 3px 10px;
+	font-size: 1.2rem;
+}
+section {
+	flex: 3 620px;
+	margin: 0 10px;
+}
+section img {
+	float: left;
+	padding: 7px 10px 0 0;
+}
+aside {
+	flex: 4 300px;
+	margin: 0 10px;
+}
+footer {
+	flex: 5 100%;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px solid #DFE3E6;
+}
